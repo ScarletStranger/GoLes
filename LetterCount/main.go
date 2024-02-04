@@ -43,7 +43,6 @@ func main() {
 		'n':0,
 		'm':0,
 	}
-
 	for _, v := in range unicode.ToLower(text){
 		letters[v]++
 	}
