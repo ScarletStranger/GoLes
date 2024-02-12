@@ -4,11 +4,10 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	"unicode"
 )
 
 func main() {
-	file, err := os.ReadFile("phrase.txt")
+file, err := os.ReadFile("phrase.txt")
 	if err != nil {
 		fmt.Print(err)
 	}
@@ -26,5 +25,6 @@ func main() {
 
 	for key, value := range letters {
 		fmt.Printf("%c - %d %.2f\n", key, value, float32(value/letterCount))
+	}
 	}
 }
